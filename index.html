@@ -3,97 +3,273 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Conecta Cidade - Início </title>
+        <title>Conecta Cidade - Início</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body id="top">
+
         <header>
-            <img src="imagens/conecta-cabecalho.png">
-            <button id="menu-btn"> ☰ </button>
-            <nav>
+            <img src="imagens/conecta-cabecalho.png" alt="Logo Conecta Cidade">
+
+            <button
+                id="menu-btn"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="menu-navegacao">
                 <ul>
-                    <li><a href="#denuncia"> Criar Denúncia </a></li>
-                    <li><a href="minhas-denuncias.html"> Denúncias </a></li>
-                    <li><a href="login.html"> Login </a></li>
+                    <li>
+                        <a href="#denuncia">Criar Denúncia</a>
+                    </li>
+
+                    <li>
+                        <a href="minhas-denuncias.html">Denúncias</a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
+
         <main>
+
             <section class="apresentacao">
+
                 <div class="apresentacao-conteudo">
+
                     <h1>Ajude a melhorar a sua cidade.</h1>
-                    <p>Registre problemas do seu bairro, acompanhe ocorrências e participe da transformação da comunidade.</p>
+
+                    <p>
+                        Registre problemas do seu bairro, acompanhe ocorrências
+                        e participe da transformação da comunidade.
+                    </p>
+
                     <a href="#denuncia">Fazer uma denúncia</a>
+
                 </div>
+
             </section>
+
 
             <section class="area-conteudo">
+
                 <div id="denuncias-recentes">
-                    <h2> Denúncias Recentes </h2>
+
+                    <h2>Denúncias Recentes</h2>
+
 
                     <article class="card-denuncia">
-                        <h3> Buraco na via principal </h3>
-                        <p><strong> Bairro: </strong> Pinheiros</p>
-                        <p><strong> Status: </strong> Pendente</p>
-                        <p> Existe um buraco na pista da direita provocando risco aos motoristas.</p>
+
+                        <h3>Buraco na via principal</h3>
+
+                        <p>
+                            <strong>Bairro:</strong>
+                            Pinheiros
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+                            Pendente
+                        </p>
+
+                        <p>
+                            Existe um buraco na pista da direita provocando
+                            risco aos motoristas.
+                        </p>
+
                     </article>
 
+
                     <article class="card-denuncia">
-                        <h3> Poste com Iluminação Queimada </h3>
-                        <p><strong> Bairro: </strong> Butantã </p>
-                        <p><strong> Status: </strong> Resolvido </p>
-                        <p> Rua escura perto da travessa principal.</p>                 
+
+                        <h3>Poste com Iluminação Queimada</h3>
+
+                        <p>
+                            <strong>Bairro:</strong>
+                            Butantã
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+                            Resolvido
+                        </p>
+
+                        <p>
+                            Rua escura perto da travessa principal.
+                        </p>
+
                     </article>
+
                 </div>
 
-                <aside class="sobre-nos">
-                    <h2> Sobre Nós</h2>
-                    <p> O Conecta Cidade nasceu com a proposta de aproximar
-                        a população dos problemas urbanos do dia a dia. </p>
 
-                    <p> Nossa ideia é facilitar o registro de ocorrências
+                <aside class="sobre-nos">
+
+                    <h2>Sobre Nós</h2>
+
+                    <p>
+                        O Conecta Cidade nasceu com a proposta de aproximar
+                        a população dos problemas urbanos do dia a dia.
+                    </p>
+
+                    <p>
+                        Nossa ideia é facilitar o registro de ocorrências
                         e permitir que a comunidade acompanhe situações
-                    pendentes e resolvidas. </p>
+                        pendentes e resolvidas.
+                    </p>
+
                 </aside>
+
             </section>
+
 
             <section id="denuncia">
-                <h2>Registrar Ocorrência </h2>
+
+                <h2>Registrar Ocorrência</h2>
+
+
                 <form id="form-denuncia">
-                    <label for="titulo"> Título da Ocorrência: </label><br>
-                    <input type="text" id="titulo" name="titulo" placeholder="Ex: Buraco na pista" required><br><br>
 
-                    <label for="categoria"> Categoria: </label><br>
-                    <select id ="categoria" name="categoria" required>
-                        <option value=""> Selecione uma opção </option>
-                        <option value="asfalto"> Asfalto / Buraco </option>
-                        <option value="iluminacao"> Iluminação Pública </option>
-                        <option value="lixo"> Lixo / Entulho </option>
-                        <option value="outros"> Outros </option>
-                    </select><br><br>
+                    <label for="titulo">
+                        Título da Ocorrência:
+                    </label>
 
-                    <label for="bairro"> Bairro / Endereço: </label><br>
-                    <input type="text" id="bairro" name="bairro" placeholder="Ex: Pinheiros" required><br><br>
+                    <br>
 
-                    <label for="foto"> Foto do Problema (Opcional): </label><br>
-                    <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+                    <input
+                        type="text"
+                        id="titulo"
+                        name="titulo"
+                        placeholder="Ex: Buraco na pista"
+                        required>
 
-                    <label for="descricao"> Descrição detalhada: </label><br>
-                    <textarea id="descricao" name="descricao" rows="4" placeholder="Conte mais detalhes..." required></textarea><br><br>
+                    <br><br>
 
-                    <button type="submit"> Enviar Denúncia </button>
+
+                    <label for="categoria">
+                        Categoria:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="categoria"
+                        name="categoria"
+                        required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="asfalto">
+                            Asfalto / Buraco
+                        </option>
+
+                        <option value="iluminacao">
+                            Iluminação Pública
+                        </option>
+
+                        <option value="lixo">
+                            Lixo / Entulho
+                        </option>
+
+                        <option value="outros">
+                            Outros
+                        </option>
+
+                    </select>
+
+                    <br><br>
+
+
+                    <label for="bairro">
+                        Bairro / Endereço:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="bairro"
+                        name="bairro"
+                        placeholder="Ex: Pinheiros"
+                        required>
+
+                    <br><br>
+
+
+                    <label for="foto">
+                        Foto do Problema (Opcional):
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="file"
+                        id="foto"
+                        name="foto"
+                        accept="image/*">
+
+                    <br><br>
+
+
+                    <label for="descricao">
+                        Descrição detalhada:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="descricao"
+                        name="descricao"
+                        rows="4"
+                        placeholder="Conte mais detalhes..."
+                        required></textarea>
+
+                    <br><br>
+
+
+                    <button type="submit">
+                        Enviar Denúncia
+                    </button>
+
                 </form>
+
             </section>
+
         </main>
 
+
         <footer>
+
             <div class="footer-links">
-                <a href="#contato"> Contato </a>
-                <a href="#top"> Voltar ao Início </a>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+                <a href="#top">
+                    Voltar ao Início
+                </a>
+
             </div>
 
-            <p>&copy; 2026 Conecta Cidade - Projeto Extensionista </p>
+            <p>
+                &copy; 2026 Conecta Cidade - Projeto Extensionista
+            </p>
+
         </footer>
+
+
+        <!-- JavaScript da Parte 4 -->
+        <script src="script.js"></script>
+
     </body>
 </html>
