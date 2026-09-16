@@ -240,3 +240,28 @@ Adaptação automática do layout para dispositivos móveis (tablets e celulares
 * **Ajuste na Fonte**: Reduz proporcionalmente os tamanhos de fonte dos títulos (`h1`, `h2`) e imagens para melhor encaixe em telas menores.
 
 <img width="310" height="888" alt="image" src="https://github.com/user-attachments/assets/cee209c3-3456-4261-9d1c-b23c79c01277" />
+
+implementação de Feature em JavaScript
+
+Na Parte 4 do Projeto Lagarta foi implementada uma nova funcionalidade em JavaScript para o **menu responsivo da página inicial**.
+
+O botão de menu (`☰`) já havia sido criado anteriormente no HTML e reservado para uma implementação futura. Nesta etapa, foi criado o arquivo `script.js`, responsável por abrir e fechar o menu de navegação em telas menores.
+
+A implementação utiliza JavaScript puro e trabalha com eventos de clique e manipulação de classes CSS.
+
+Principais recursos utilizados:
+
+- `getElementById()`;
+- `querySelectorAll()`;
+- `addEventListener()`;
+- `classList.toggle()`;
+- `classList.contains()`;
+- `classList.remove()`;
+- `forEach()`;
+- `setAttribute()`.
+
+Também foram realizados pequenos ajustes no `index.html` e no `style.css` para integrar a nova funcionalidade.
+
+O tutorial completo da implementação está disponível no arquivo **`TUTORIAL.md`**.
+
+
