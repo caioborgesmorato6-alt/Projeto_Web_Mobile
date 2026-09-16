@@ -255,18 +255,45 @@ footer p {
 
     header {
         padding: 15px 5%;
+        position: relative;
     }
 
     header img {
         width: 110px;
     }
 
+    #menu-btn {
+        display: block;
+        background-color: transparent;
+        color: var(--branco);
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--azul-escuro);
+        padding: 15px 5%;
+        z-index: 10;
+    }
+
+    nav.menu-aberto {
+        display: block;
+    }
+
     nav ul {
-        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .apresentacao {
